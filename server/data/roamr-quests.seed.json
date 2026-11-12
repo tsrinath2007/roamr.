@@ -1,0 +1,827 @@
+{
+  "city": "Bengaluru",
+  "usd_to_inr_demo_rate_note": "set one constant in the app",
+  "quests": [
+    {
+      "id": "matteo-coffea",
+      "title": "Espresso Break at Matteo Coffea",
+      "place_name": "Matteo Coffea",
+      "category": "Café",
+      "quest_type": "purchase",
+      "address": "Church Street, Bengaluru",
+      "lat": 12.9754,
+      "lng": 77.6025,
+      "geocode_query": null,
+      "radius_m": 150,
+      "night_only": false,
+      "difficulty": "Easy",
+      "est_minutes": 20,
+      "public_description": "Local coffee shop known for espresso drinks and café snacks.",
+      "public_objective": "Order a coffee and photograph it with the café logo.",
+      "text_answer_prompt": null,
+      "proof_hint": "Receipt",
+      "maps_link": "https://www.google.com/maps/search/?api=1&query=Matteo%20Coffea%20Church%20Street%2C%20Bengaluru",
+      "photo_url": null,
+      "funded_by": "Matteo Coffea",
+      "budget_usd": 20,
+      "xp": 25,
+      "reward": {
+        "min_bill_inr": 200,
+        "cashback_percent": 15,
+        "max_reward_usd": 2
+      },
+      "ai_private": {
+        "must_show": [
+          "a coffee drink on the table",
+          "the cafe logo or branding visible",
+          "bill or receipt showing 'Matteo Coffea'"
+        ],
+        "reject_if": [
+          "screenshot or photo of a screen",
+          "stock or internet image",
+          "photo clearly taken at a different place",
+          "obviously edited or AI-generated image"
+        ],
+        "bill_checks": [
+          "receipt or bill shows the place name",
+          "bill date is today",
+          "bill total matches the PayPal payment within 10%"
+        ],
+        "notes": "DRAFT brief derived from the teammates' sheet; the business should edit it."
+      },
+      "funded": true,
+      "reward_mode": "cashback"
+    },
+    {
+      "id": "corner-house",
+      "title": "Death by Chocolate Challenge",
+      "place_name": "Corner House",
+      "category": "Dessert shop",
+      "quest_type": "purchase",
+      "address": "Residency Road Cross, Bengaluru",
+      "lat": 12.9669,
+      "lng": 77.607,
+      "geocode_query": null,
+      "radius_m": 150,
+      "night_only": false,
+      "difficulty": "Easy",
+      "est_minutes": 20,
+      "public_description": "Bengaluru dessert chain known for Death by Chocolate.",
+      "public_objective": "Order Death by Chocolate and photograph it with the bill.",
+      "text_answer_prompt": null,
+      "proof_hint": "Receipt",
+      "maps_link": "https://www.google.com/maps/search/?api=1&query=Corner%20House%20Residency%20Road%20Cross%2C%20Bengaluru",
+      "photo_url": null,
+      "funded_by": "Corner House",
+      "budget_usd": 20,
+      "xp": 25,
+      "reward": {
+        "min_bill_inr": 250,
+        "cashback_percent": 20,
+        "max_reward_usd": 2
+      },
+      "ai_private": {
+        "must_show": [
+          "the Death by Chocolate dessert",
+          "bill showing the item and total"
+        ],
+        "reject_if": [
+          "screenshot or photo of a screen",
+          "stock or internet image",
+          "photo clearly taken at a different place",
+          "obviously edited or AI-generated image"
+        ],
+        "bill_checks": [
+          "receipt or bill shows the place name",
+          "bill date is today",
+          "bill total matches the PayPal payment within 10%"
+        ],
+        "notes": "DRAFT brief derived from the teammates' sheet; the business should edit it."
+      },
+      "funded": true,
+      "reward_mode": "cashback"
+    },
+    {
+      "id": "koshy-s",
+      "title": "Classic Coffee at Koshy's",
+      "place_name": "Koshy’s",
+      "category": "Restaurant",
+      "quest_type": "purchase",
+      "address": "39 St. Marks Road, Bengaluru",
+      "lat": 12.9756,
+      "lng": 77.6015,
+      "geocode_query": null,
+      "radius_m": 150,
+      "night_only": false,
+      "difficulty": "Easy",
+      "est_minutes": 25,
+      "public_description": "Long-running local restaurant with classic Bengaluru dining.",
+      "public_objective": "Order a coffee or snack and photograph it with the bill.",
+      "text_answer_prompt": null,
+      "proof_hint": "Receipt",
+      "maps_link": "https://www.google.com/maps/search/?api=1&query=Koshy%E2%80%99s%2039%20St.%20Marks%20Road%2C%20Bengaluru",
+      "photo_url": null,
+      "funded_by": "Koshy’s",
+      "budget_usd": 20,
+      "xp": 25,
+      "reward": {
+        "min_bill_inr": 250,
+        "cashback_percent": 15,
+        "max_reward_usd": 2
+      },
+      "ai_private": {
+        "must_show": [
+          "a coffee or snack on the table",
+          "bill showing 'Koshy' and the total"
+        ],
+        "reject_if": [
+          "screenshot or photo of a screen",
+          "stock or internet image",
+          "photo clearly taken at a different place",
+          "obviously edited or AI-generated image"
+        ],
+        "bill_checks": [
+          "receipt or bill shows the place name",
+          "bill date is today",
+          "bill total matches the PayPal payment within 10%"
+        ],
+        "notes": "DRAFT brief derived from the teammates' sheet; the business should edit it."
+      },
+      "funded": true,
+      "reward_mode": "cashback"
+    },
+    {
+      "id": "blossom-book-house",
+      "title": "Three Authors, Three Genres",
+      "place_name": "Blossom Book House",
+      "category": "Bookstore / hands-on activity",
+      "quest_type": "visit",
+      "address": "Church Street, Bengaluru",
+      "lat": 12.975,
+      "lng": 77.6053,
+      "geocode_query": null,
+      "radius_m": 150,
+      "night_only": false,
+      "difficulty": "Hard",
+      "est_minutes": 35,
+      "public_description": "Independent bookstore with new and second-hand books.",
+      "public_objective": "Find three books by different Indian authors from three different genres; photograph all three covers together with permission and record the authors.",
+      "text_answer_prompt": "List the three authors and their genres",
+      "proof_hint": "Photo of three book covers",
+      "maps_link": "https://www.google.com/maps/search/?api=1&query=Blossom%20Book%20House%20Church%20Street%2C%20Bengaluru",
+      "photo_url": null,
+      "funded_by": null,
+      "budget_usd": 0,
+      "xp": 120,
+      "reward": {
+        "xp_only": true
+      },
+      "ai_private": {
+        "must_show": [
+          "three different book covers in one photo",
+          "the three authors in the text answer match the covers",
+          "three clearly different genres"
+        ],
+        "reject_if": [
+          "screenshot or photo of a screen",
+          "stock or internet image",
+          "photo clearly taken at a different place",
+          "obviously edited or AI-generated image"
+        ],
+        "bill_checks": [],
+        "notes": "DRAFT brief derived from the teammates' sheet; the business should edit it."
+      },
+      "funded": false,
+      "reward_mode": "xp_only"
+    },
+    {
+      "id": "amoeba",
+      "title": "Strike at Amoeba",
+      "place_name": "Amoeba",
+      "category": "Arcade / bowling",
+      "quest_type": "purchase",
+      "address": "Barton Centre, MG Road, Bengaluru",
+      "lat": 12.9755,
+      "lng": 77.6058,
+      "geocode_query": null,
+      "radius_m": 150,
+      "night_only": false,
+      "difficulty": "Medium",
+      "est_minutes": 30,
+      "public_description": "Indoor entertainment venue with bowling and arcade games.",
+      "public_objective": "Play one game and photograph your score.",
+      "text_answer_prompt": null,
+      "proof_hint": "Score photo or receipt",
+      "maps_link": "https://www.google.com/maps/search/?api=1&query=Amoeba%20Barton%20Centre%2C%20MG%20Road%2C%20Bengaluru",
+      "photo_url": null,
+      "funded_by": "Amoeba",
+      "budget_usd": 20,
+      "xp": 40,
+      "reward": {
+        "min_bill_inr": 300,
+        "cashback_percent": 15,
+        "max_reward_usd": 2
+      },
+      "ai_private": {
+        "must_show": [
+          "a score screen or a receipt from the venue"
+        ],
+        "reject_if": [
+          "screenshot or photo of a screen",
+          "stock or internet image",
+          "photo clearly taken at a different place",
+          "obviously edited or AI-generated image"
+        ],
+        "bill_checks": [
+          "receipt or bill shows the place name",
+          "bill date is today",
+          "bill total matches the PayPal payment within 10%"
+        ],
+        "notes": "DRAFT brief derived from the teammates' sheet; the business should edit it."
+      },
+      "funded": true,
+      "reward_mode": "cashback"
+    },
+    {
+      "id": "brik-oven",
+      "title": "Wood-Fired at Brik Oven",
+      "place_name": "Brik Oven",
+      "category": "Pizzeria",
+      "quest_type": "purchase",
+      "address": "Church Street, Bengaluru",
+      "lat": 12.9754,
+      "lng": 77.6038,
+      "geocode_query": null,
+      "radius_m": 150,
+      "night_only": false,
+      "difficulty": "Easy",
+      "est_minutes": 30,
+      "public_description": "Locally founded restaurant serving wood-fired pizzas.",
+      "public_objective": "Order a pizza and photograph it before eating.",
+      "text_answer_prompt": null,
+      "proof_hint": "Receipt",
+      "maps_link": "https://www.google.com/maps/search/?api=1&query=Brik%20Oven%20Church%20Street%2C%20Bengaluru",
+      "photo_url": null,
+      "funded_by": "Brik Oven",
+      "budget_usd": 20,
+      "xp": 25,
+      "reward": {
+        "min_bill_inr": 300,
+        "cashback_percent": 15,
+        "max_reward_usd": 2
+      },
+      "ai_private": {
+        "must_show": [
+          "a pizza on the table before eating",
+          "receipt showing 'Brik Oven'"
+        ],
+        "reject_if": [
+          "screenshot or photo of a screen",
+          "stock or internet image",
+          "photo clearly taken at a different place",
+          "obviously edited or AI-generated image"
+        ],
+        "bill_checks": [
+          "receipt or bill shows the place name",
+          "bill date is today",
+          "bill total matches the PayPal payment within 10%"
+        ],
+        "notes": "DRAFT brief derived from the teammates' sheet; the business should edit it."
+      },
+      "funded": true,
+      "reward_mode": "cashback"
+    },
+    {
+      "id": "meghana-foods",
+      "title": "The Meghana Special",
+      "place_name": "Meghana Foods",
+      "category": "Biryani restaurant",
+      "quest_type": "purchase",
+      "address": "Residency Road, Bengaluru",
+      "lat": 12.97282,
+      "lng": 77.60918,
+      "geocode_query": null,
+      "radius_m": 150,
+      "night_only": false,
+      "difficulty": "Easy",
+      "est_minutes": 30,
+      "public_description": "Bengaluru restaurant known for spicy Andhra-style biryani.",
+      "public_objective": "Order Meghana Special Biryani and photograph it alongside the receipt.",
+      "text_answer_prompt": null,
+      "proof_hint": "Receipt",
+      "maps_link": "https://www.google.com/maps/search/?api=1&query=Meghana%20Foods%20Residency%20Road%2C%20Bengaluru",
+      "photo_url": null,
+      "funded_by": "Meghana Foods",
+      "budget_usd": 20,
+      "xp": 25,
+      "reward": {
+        "min_bill_inr": 300,
+        "cashback_percent": 15,
+        "max_reward_usd": 2
+      },
+      "ai_private": {
+        "must_show": [
+          "Meghana Special Biryani",
+          "receipt showing 'Meghana Foods'"
+        ],
+        "reject_if": [
+          "screenshot or photo of a screen",
+          "stock or internet image",
+          "photo clearly taken at a different place",
+          "obviously edited or AI-generated image"
+        ],
+        "bill_checks": [
+          "receipt or bill shows the place name",
+          "bill date is today",
+          "bill total matches the PayPal payment within 10%"
+        ],
+        "notes": "DRAFT brief derived from the teammates' sheet; the business should edit it."
+      },
+      "funded": true,
+      "reward_mode": "cashback"
+    },
+    {
+      "id": "smash-guys-burger-kitchen",
+      "title": "Smash Guys Burger Run",
+      "place_name": "Smash Guys – Burger Kitchen",
+      "category": "Smash burger restaurant",
+      "quest_type": "purchase",
+      "address": "948, Ground Floor, 12th Main Road, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560038",
+      "lat": null,
+      "lng": null,
+      "geocode_query": "Smash Guys – Burger Kitchen, 948, Ground Floor, 12th Main Road, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560038",
+      "radius_m": 150,
+      "night_only": false,
+      "difficulty": "Easy",
+      "est_minutes": 40,
+      "public_description": "Bengaluru burger kitchen specialising in American-style smash burgers.",
+      "public_objective": "Order a smash burger and photograph the burger alongside the receipt.",
+      "text_answer_prompt": null,
+      "proof_hint": "Receipt",
+      "maps_link": "https://www.google.com/maps/search/?api=1&query=Smash%20Guys%20Burger%20Kitchen%20948%2012th%20Main%20Indiranagar%20Bengaluru",
+      "photo_url": null,
+      "funded_by": "Smash Guys – Burger Kitchen",
+      "budget_usd": 20,
+      "xp": 25,
+      "reward": {
+        "min_bill_inr": 300,
+        "cashback_percent": 15,
+        "max_reward_usd": 2
+      },
+      "ai_private": {
+        "must_show": [
+          "a smash burger",
+          "receipt showing 'Smash Guys'"
+        ],
+        "reject_if": [
+          "screenshot or photo of a screen",
+          "stock or internet image",
+          "photo clearly taken at a different place",
+          "obviously edited or AI-generated image"
+        ],
+        "bill_checks": [
+          "receipt or bill shows the place name",
+          "bill date is today",
+          "bill total matches the PayPal payment within 10%"
+        ],
+        "notes": "DRAFT brief derived from the teammates' sheet; the business should edit it."
+      },
+      "funded": true,
+      "reward_mode": "cashback"
+    },
+    {
+      "id": "kempegowda-international-airport-termina",
+      "title": "Midnight Aviation Hunt",
+      "place_name": "Kempegowda International Airport – Terminal 2",
+      "category": "Landmark / Night activity",
+      "quest_type": "visit",
+      "address": "Terminal 2, Devanahalli, Bengaluru, Karnataka",
+      "lat": 13.1986,
+      "lng": 77.7066,
+      "geocode_query": null,
+      "radius_m": 600,
+      "night_only": true,
+      "difficulty": "Hard",
+      "est_minutes": 30,
+      "public_description": "Illuminated airport terminal with distinctive architecture.",
+      "public_objective": "Midnight Aviation Hunt: After sunset, photograph the illuminated terminal exterior from a permitted public area and note three visible architectural features.",
+      "text_answer_prompt": "Name three visible architectural features",
+      "proof_hint": "Exterior photo + three observations",
+      "maps_link": "https://www.google.com/maps/search/?api=1&query=Kempegowda%20International%20Airport%20Terminal%202%20Bengaluru",
+      "photo_url": null,
+      "funded_by": null,
+      "budget_usd": 0,
+      "xp": 120,
+      "reward": {
+        "xp_only": true
+      },
+      "ai_private": {
+        "must_show": [
+          "the illuminated terminal exterior after dark",
+          "taken from a public area",
+          "the three features in the text answer are plausible for the photo"
+        ],
+        "reject_if": [
+          "screenshot or photo of a screen",
+          "stock or internet image",
+          "photo clearly taken at a different place",
+          "obviously edited or AI-generated image"
+        ],
+        "bill_checks": [],
+        "notes": "DRAFT brief derived from the teammates' sheet; the business should edit it."
+      },
+      "funded": false,
+      "reward_mode": "xp_only"
+    },
+    {
+      "id": "church-street-neon-detective",
+      "title": "Neon Detective",
+      "place_name": "Church Street – Neon Detective",
+      "category": "Street exploration / Night activity",
+      "quest_type": "visit",
+      "address": "Church Street, Central Bengaluru, Karnataka",
+      "lat": 12.9755,
+      "lng": 77.6025,
+      "geocode_query": null,
+      "radius_m": 250,
+      "night_only": true,
+      "difficulty": "Medium",
+      "est_minutes": 30,
+      "public_description": "Lively street with illuminated shops, cafés and street art.",
+      "public_objective": "Neon Detective: After sunset, photograph an illuminated sign, a mural or street artwork, and a creative reflection of street lights; combine into one collage.",
+      "text_answer_prompt": null,
+      "proof_hint": "Three-photo collage",
+      "maps_link": "https://www.google.com/maps/search/?api=1&query=Church%20Street%20Bengaluru%20at%20night",
+      "photo_url": null,
+      "funded_by": null,
+      "budget_usd": 0,
+      "xp": 80,
+      "reward": {
+        "xp_only": true
+      },
+      "ai_private": {
+        "must_show": [
+          "a collage of three photos",
+          "an illuminated sign",
+          "a mural or street artwork",
+          "a reflection of street lights",
+          "taken after dark"
+        ],
+        "reject_if": [
+          "screenshot or photo of a screen",
+          "stock or internet image",
+          "photo clearly taken at a different place",
+          "obviously edited or AI-generated image"
+        ],
+        "bill_checks": [],
+        "notes": "DRAFT brief derived from the teammates' sheet; the business should edit it."
+      },
+      "funded": false,
+      "reward_mode": "xp_only"
+    },
+    {
+      "id": "cubbon-park",
+      "title": "Under the Bamboo Canopy",
+      "place_name": "Cubbon Park",
+      "category": "Park",
+      "quest_type": "visit",
+      "address": "Kasturba Road, near MG Road, Bengaluru",
+      "lat": 12.9763,
+      "lng": 77.5929,
+      "geocode_query": null,
+      "radius_m": 400,
+      "night_only": false,
+      "difficulty": "Easy",
+      "est_minutes": 25,
+      "public_description": "Bengaluru's 300-acre green lung with bamboo groves, old trees and colonial-era statues.",
+      "public_objective": "Find the bamboo grove and photograph yourself on a path under the canopy.",
+      "text_answer_prompt": null,
+      "proof_hint": "Photo of the place",
+      "maps_link": "https://www.google.com/maps/search/?api=1&query=Cubbon%20Park%20Bengaluru",
+      "photo_url": null,
+      "funded_by": null,
+      "budget_usd": 0,
+      "xp": 50,
+      "reward": {
+        "xp_only": true
+      },
+      "ai_private": {
+        "must_show": [
+          "a person on a tree-canopied path",
+          "bamboo grove visible"
+        ],
+        "reject_if": [
+          "screenshot or photo of a screen",
+          "stock or internet image",
+          "photo clearly taken at a different place",
+          "obviously edited or AI-generated image"
+        ],
+        "bill_checks": [],
+        "notes": "DRAFT brief derived from the teammates' sheet; the business should edit it."
+      },
+      "funded": false,
+      "reward_mode": "xp_only"
+    },
+    {
+      "id": "vidhana-soudha",
+      "title": "Facade of Power",
+      "place_name": "Vidhana Soudha",
+      "category": "Landmark",
+      "quest_type": "visit",
+      "address": "Dr. Ambedkar Veedhi, Bengaluru",
+      "lat": 12.9796,
+      "lng": 77.5907,
+      "geocode_query": null,
+      "radius_m": 300,
+      "night_only": false,
+      "difficulty": "Easy",
+      "est_minutes": 15,
+      "public_description": "Granite seat of the Karnataka legislature and one of the city's best-known buildings.",
+      "public_objective": "Photograph the full facade and its front steps from the public side of the road.",
+      "text_answer_prompt": null,
+      "proof_hint": "Photo of the place",
+      "maps_link": "https://www.google.com/maps/search/?api=1&query=Vidhana%20Soudha%20Bengaluru",
+      "photo_url": null,
+      "funded_by": null,
+      "budget_usd": 0,
+      "xp": 50,
+      "reward": {
+        "xp_only": true
+      },
+      "ai_private": {
+        "must_show": [
+          "the full Vidhana Soudha facade",
+          "the front steps"
+        ],
+        "reject_if": [
+          "screenshot or photo of a screen",
+          "stock or internet image",
+          "photo clearly taken at a different place",
+          "obviously edited or AI-generated image"
+        ],
+        "bill_checks": [],
+        "notes": "DRAFT brief derived from the teammates' sheet; the business should edit it."
+      },
+      "funded": false,
+      "reward_mode": "xp_only"
+    },
+    {
+      "id": "government-museum",
+      "title": "Artefact of the Day",
+      "place_name": "Government Museum",
+      "category": "Museum",
+      "quest_type": "visit",
+      "address": "Kasturba Road, Bengaluru",
+      "lat": 12.9752,
+      "lng": 77.5957,
+      "geocode_query": null,
+      "radius_m": 150,
+      "night_only": false,
+      "difficulty": "Medium",
+      "est_minutes": 45,
+      "public_description": "One of India's oldest museums, with archaeology, sculpture and Mysore-era art.",
+      "public_objective": "Buy a ticket and photograph your favourite artefact with its label, with permission.",
+      "text_answer_prompt": null,
+      "proof_hint": "Receipt (entry ticket)",
+      "maps_link": "https://www.google.com/maps/search/?api=1&query=Government%20Museum%20Bengaluru",
+      "photo_url": null,
+      "funded_by": null,
+      "budget_usd": 0,
+      "xp": 80,
+      "reward": {
+        "xp_only": true
+      },
+      "ai_private": {
+        "must_show": [
+          "an artefact with its label",
+          "an entry ticket"
+        ],
+        "reject_if": [
+          "screenshot or photo of a screen",
+          "stock or internet image",
+          "photo clearly taken at a different place",
+          "obviously edited or AI-generated image"
+        ],
+        "bill_checks": [],
+        "notes": "DRAFT brief derived from the teammates' sheet; the business should edit it."
+      },
+      "funded": false,
+      "reward_mode": "xp_only"
+    },
+    {
+      "id": "venkatappa-art-gallery",
+      "title": "Find the Painting",
+      "place_name": "Venkatappa Art Gallery",
+      "category": "Museum / art gallery",
+      "quest_type": "visit",
+      "address": "Kasturba Road, Cubbon Park, Bengaluru",
+      "lat": 12.9758,
+      "lng": 77.5953,
+      "geocode_query": null,
+      "radius_m": 150,
+      "night_only": false,
+      "difficulty": "Easy",
+      "est_minutes": 30,
+      "public_description": "Small art gallery in Cubbon Park, home to works by K. Venkatappa and Karnataka artists.",
+      "public_objective": "Pick one painting, photograph it and note the artist's name.",
+      "text_answer_prompt": "Name the artist of the painting you chose",
+      "proof_hint": "Photo of the place",
+      "maps_link": "https://www.google.com/maps/search/?api=1&query=Venkatappa%20Art%20Gallery%20Bengaluru",
+      "photo_url": null,
+      "funded_by": null,
+      "budget_usd": 0,
+      "xp": 50,
+      "reward": {
+        "xp_only": true
+      },
+      "ai_private": {
+        "must_show": [
+          "a painting inside the gallery",
+          "the artist name in the answer matches the wall label"
+        ],
+        "reject_if": [
+          "screenshot or photo of a screen",
+          "stock or internet image",
+          "photo clearly taken at a different place",
+          "obviously edited or AI-generated image"
+        ],
+        "bill_checks": [],
+        "notes": "DRAFT brief derived from the teammates' sheet; the business should edit it."
+      },
+      "funded": false,
+      "reward_mode": "xp_only"
+    },
+    {
+      "id": "visvesvaraya-industrial-technological-mu",
+      "title": "Hands-On at VITM",
+      "place_name": "Visvesvaraya Industrial & Technological Museum",
+      "category": "Museum",
+      "quest_type": "visit",
+      "address": "Kasturba Road, Bengaluru",
+      "lat": 12.9748,
+      "lng": 77.5964,
+      "geocode_query": null,
+      "radius_m": 150,
+      "night_only": false,
+      "difficulty": "Medium",
+      "est_minutes": 60,
+      "public_description": "Hands-on science museum with working exhibits, an aircraft and engines on display.",
+      "public_objective": "Try one hands-on exhibit and photograph yourself at it, plus your ticket.",
+      "text_answer_prompt": null,
+      "proof_hint": "Receipt (entry ticket)",
+      "maps_link": "https://www.google.com/maps/search/?api=1&query=Visvesvaraya%20Industrial%20%26%20Technological%20Museum%20Bengaluru",
+      "photo_url": null,
+      "funded_by": null,
+      "budget_usd": 0,
+      "xp": 80,
+      "reward": {
+        "xp_only": true
+      },
+      "ai_private": {
+        "must_show": [
+          "a person at a hands-on exhibit",
+          "an entry ticket"
+        ],
+        "reject_if": [
+          "screenshot or photo of a screen",
+          "stock or internet image",
+          "photo clearly taken at a different place",
+          "obviously edited or AI-generated image"
+        ],
+        "bill_checks": [],
+        "notes": "DRAFT brief derived from the teammates' sheet; the business should edit it."
+      },
+      "funded": false,
+      "reward_mode": "xp_only"
+    },
+    {
+      "id": "st-mark-s-cathedral",
+      "title": "Dome and Doorway",
+      "place_name": "St. Mark's Cathedral",
+      "category": "Landmark / heritage",
+      "quest_type": "visit",
+      "address": "St. Marks Road, near MG Road, Bengaluru",
+      "lat": 12.9749,
+      "lng": 77.6,
+      "geocode_query": null,
+      "radius_m": 200,
+      "night_only": false,
+      "difficulty": "Easy",
+      "est_minutes": 20,
+      "public_description": "1808 Anglican cathedral with a domed colonial design, close to MG Road.",
+      "public_objective": "Photograph the dome and the front entrance together in one frame.",
+      "text_answer_prompt": null,
+      "proof_hint": "Photo of the place",
+      "maps_link": "https://www.google.com/maps/search/?api=1&query=St.%20Mark%27s%20Cathedral%20Bengaluru",
+      "photo_url": null,
+      "funded_by": null,
+      "budget_usd": 0,
+      "xp": 50,
+      "reward": {
+        "xp_only": true
+      },
+      "ai_private": {
+        "must_show": [
+          "the dome and the front entrance together in one frame"
+        ],
+        "reject_if": [
+          "screenshot or photo of a screen",
+          "stock or internet image",
+          "photo clearly taken at a different place",
+          "obviously edited or AI-generated image"
+        ],
+        "bill_checks": [],
+        "notes": "DRAFT brief derived from the teammates' sheet; the business should edit it."
+      },
+      "funded": false,
+      "reward_mode": "xp_only"
+    },
+    {
+      "id": "commercial-street",
+      "title": "The Local Find",
+      "place_name": "Commercial Street",
+      "category": "Market",
+      "quest_type": "visit",
+      "address": "Commercial Street, Shivajinagar, Bengaluru",
+      "lat": 12.9822,
+      "lng": 77.6086,
+      "geocode_query": null,
+      "radius_m": 250,
+      "night_only": false,
+      "difficulty": "Medium",
+      "est_minutes": 40,
+      "public_description": "Busy shopping street known for clothes, fabrics, jewellery and street stalls.",
+      "public_objective": "Find one handmade or local item, then photograph it with its price tag.",
+      "text_answer_prompt": null,
+      "proof_hint": "Photo of the item with price tag",
+      "maps_link": "https://www.google.com/maps/search/?api=1&query=Commercial%20Street%20Bengaluru",
+      "photo_url": null,
+      "funded_by": null,
+      "budget_usd": 0,
+      "xp": 80,
+      "reward": {
+        "xp_only": true
+      },
+      "ai_private": {
+        "must_show": [
+          "a handmade or local item",
+          "its price tag visible"
+        ],
+        "reject_if": [
+          "screenshot or photo of a screen",
+          "stock or internet image",
+          "photo clearly taken at a different place",
+          "obviously edited or AI-generated image"
+        ],
+        "bill_checks": [],
+        "notes": "DRAFT brief derived from the teammates' sheet; the business should edit it."
+      },
+      "funded": false,
+      "reward_mode": "xp_only"
+    },
+    {
+      "id": "ulsoor-lake-halasuru-lake",
+      "title": "Skyline from the Promenade",
+      "place_name": "Ulsoor Lake (Halasuru Lake)",
+      "category": "Lake / viewpoint",
+      "quest_type": "visit",
+      "address": "Halasuru, near MG Road, Bengaluru",
+      "lat": 12.9826,
+      "lng": 77.6195,
+      "geocode_query": null,
+      "radius_m": 300,
+      "night_only": false,
+      "difficulty": "Medium",
+      "est_minutes": 40,
+      "public_description": "Historic lake with a promenade, island and city-skyline views.",
+      "public_objective": "Walk the promenade to a lakeside viewpoint and photograph the water with the skyline behind it.",
+      "text_answer_prompt": null,
+      "proof_hint": "Photo of the place",
+      "maps_link": "https://www.google.com/maps/search/?api=1&query=Ulsoor%20Lake%20%28Halasuru%20Lake%29%20Bengaluru",
+      "photo_url": null,
+      "funded_by": null,
+      "budget_usd": 0,
+      "xp": 80,
+      "reward": {
+        "xp_only": true
+      },
+      "ai_private": {
+        "must_show": [
+          "lake water in the foreground",
+          "the city skyline behind it"
+        ],
+        "reject_if": [
+          "screenshot or photo of a screen",
+          "stock or internet image",
+          "photo clearly taken at a different place",
+          "obviously edited or AI-generated image"
+        ],
+        "bill_checks": [],
+        "notes": "DRAFT brief derived from the teammates' sheet; the business should edit it."
+      },
+      "funded": false,
+      "reward_mode": "xp_only"
+    }
+  ],
+  "rule": "funded = budget_remaining_usd > 0. Funded quests show the PayPal bill payment and cashback; all others (and funded quests whose budget ran out) give XP and a stamp only."
+}

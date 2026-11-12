@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "roamr",
+    "slug": "roamr",
+    "version": "1.0.0",
+    "scheme": "roamr",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "ROAMR uses your camera to capture photo or receipt proof at local quest destinations.",
+        "NSPhotoLibraryUsageDescription": "ROAMR lets you pick a photo or receipt from your library to verify quest completion.",
+        "NSLocationWhenInUseUsageDescription": "ROAMR uses your location to display nearby exploration quests."
+      }
+    },
+    "android": {
+      "softwareKeyboardLayoutMode": "resize",
+      "adaptiveIcon": {
+        "backgroundColor": "#EBF2E8",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "CAMERA"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-web-browser",
+      "expo-font",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "ROAMR accesses your photos so you can submit quest proof.",
+          "cameraPermission": "ROAMR uses your camera to take photo or receipt proof for quests."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "ROAMR uses your location to highlight nearby quests on the map."
+        }
+      ]
+    ]
+  }
+}

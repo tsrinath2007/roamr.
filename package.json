@@ -1,0 +1,17 @@
+{
+  "name": "roamr-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ROAMR — Explore, Quest, Earn. Expo React Native mobile app + Express backend for PayPal AI Hackathon.",
+  "scripts": {
+    "dev": "npm run usb:reverse && concurrently -n SERVER,APP -c green,cyan \"npm --prefix server run dev\" \"npm --prefix app run start\"",
+    "start": "npm run usb:reverse && concurrently -n SERVER,APP -c green,cyan \"npm --prefix server run start\" \"npm --prefix app run start\"",
+    "server": "npm --prefix server run dev",
+    "app": "npm run usb:reverse && npm --prefix app run start",
+    "usb:reverse": "powershell -NoProfile -Command \"$adb = Join-Path $env:LOCALAPPDATA 'Microsoft\\WinGet\\Packages\\Genymobile.scrcpy_Microsoft.Winget.Source_8wekyb3d8bbwe\\scrcpy-win64-v5.0.1\\adb.exe'; if (-not (Test-Path $adb)) { $adb = Join-Path $env:LOCALAPPDATA 'Android\\Sdk\\platform-tools\\adb.exe' }; if (Test-Path $adb) { & $adb reverse tcp:8081 tcp:8081 2>$null; & $adb reverse tcp:5000 tcp:5000 2>$null }; exit 0\"",
+    "install:all": "npm install && npm --prefix server install && npm --prefix app install"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
